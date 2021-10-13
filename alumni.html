@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>KMD Myanmar</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header>
+        <!--Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
+            <a class="navbar-brand" href="#">KMD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About 
+                        </a>
+                        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                            <a class="dropdown-item" href="about.html">About Us</a>
+                            <a class="dropdown-item" href="branches.html">Branches</a>
+                            <a class="dropdown-item" href="departments.html">Departments</a>
+                            <a class="dropdown-item" href="campus.html">Campus</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="csrs.html">Csrs</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <span class="sr-only">(current)</span>
+                        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                            <a class="dropdown-item" href="contact.html">Contact Us</a>
+                            <a class="dropdown-item" href="alumni.html">Alumni</a>
+                            <a class="dropdown-item" href="franchises.html">Franchises</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <!-- <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">1
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li> -->
+                    <li class="nav-item avatar dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/general/avatar.jpg" class="rounded-circle z-depth-0" alt="Avatar" style="height: 35px;">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--/.Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-3">
+        <!--Main container-->
+        <div class="container">
+
+            <!--Enroll Row-->
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mb-12">
+                    <div style="height: 60px;"></div>
+                    <h5 class="h5-responsive font-weight-bold text-center my-4">KMD Alumni</h5>
+                </div>
+                <!--Content Column-->
+                <div class="col-lg-9">
+                    <div class="card">
+                        <h5 class="card-header info-color white-text text-center py-2">
+                            <strong>Alumni Form</strong>
+                        </h5>
+                        <div class="card-body px-lg-5 pt-0">
+                            <!-- Form -->
+                            <form class="text-center" style="color: #757575;" action="#!">
+
+                                <div class="form-row">
+                                <div class="col"> 
+                                <!-- Name -->
+
+                                <div class="md-form">
+                                    <input type="text" id="name" class="form-control">
+                                    <label for="name">Name</label>
+                                </div>
+                                </div>
+                                </div>
+
+                                <!-- NRC No. -->
+                                <div class="md-form">
+                                    <input type="text" id="nrcnum" class="form-control">
+                                    <label for="nrcnum">NRC No.</label>
+                                </div>
+
+                                <!-- Date of Birth and Age -->
+                                <div class="form-row">
+                                <div class="col">
+                                <!-- Date of Birth-->
+                                    <div class="md-form">
+                                    <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
+                                    <label for="date-picker-example">Date of Birth</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                <!-- Age -->
+                                    <div class="md-form">
+                                        <input placeholder="Years" type="text" id="age" class="form-control">
+                                        <label for="age">Age</label>
+                                    </div>
+                                    <!-- end of age -->
+                                </div>
+                                </div>
+
+                                <br>
+                                <!-- Gender -->
+                                <div>   
+                                <label class="float-sm-left" for="gender">Gender</label>
+                                 
+                                <!-- Male -->
+                                    
+                                <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="male" name="gender"> 
+                                <label class="form-check-label" for="male">Male</label> 
+                                </div>
+
+                                <!-- Female -->
+                                <div class="form-check form-check-inline">
+                                  <input type="radio" class="form-check-input" id="female" name="gender">
+                                  <label class="form-check-label" for="female">Female</label>
+                                </div>
+                                </div><br>
+                     
+                            <!-- ----------------------------------------------------------------------------- -->
+
+                                        <!-- material status -->
+                                        <div class="float-sm-left">
+                                            <label class="float-sm-left">Maritial Status</label>
+                                        </div>
+                                            <!-- single -->
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" id="single" name="maritialstatus"> 
+                                                <label class="form-check-label" for="single">Single</label> 
+                                            </div>
+
+                                            <!-- Married -->
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" id="married" name="maritialstatus"> 
+                                                <label class="form-check-label" for="married">Married</label> 
+                                            </div>
+
+                                            <!-- divorced -->
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" id="divorced" name="maritialstatus"> 
+                                                <label class="form-check-label" for="divorced">Divorced</label> 
+                                            </div>
+
+                                        
+                                        <br><br>
+
+                            <!-- ------------------------------------------------------------------ -->
+
+                                <!-- Race and Religion -->
+                                <div class="form-row">
+                                <div class="col">
+                                <!-- Race-->
+                                    <div class="md-form">
+                                    <input type="text" id="Race" class="form-control">
+                                    <label for="race">Race</label>
+                                    </div>
+                                
+                                </div>
+                                <div class="col">
+                                <!-- Religion -->
+                                    <div class="md-form">
+                                        <input type="text" id="religion" class="form-control">
+                                        <label for="religion">Religion</label>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <!-- Contact Address -->
+                                <div class="md-form mt-0">
+                                    <input type="text" id="contactaddress" class="form-control">
+                                    <label for="contactaddress">Contact Address</label>
+                                </div>
+
+                                <!-- Phone number -->
+                                <div class="md-form">
+                                    <input type="text" id="phone" class="form-control">
+                                    <label for="phone">Phone number</label>                
+                                </div>
+
+                                <!-- E-mail -->
+                                
+                                <div class="md-form mt-0">
+                                    <input type="email" id="email" class="form-control">
+                                    <label for="email">E-mail</label>
+                                </div>
+                                
+                                <!-- Password -->
+                                <div class="md-form">
+                                    <input type="password" id="password" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                                    <label for="password">Password</label>
+                                    <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                        At least 8 characters and 1 digit
+                                    </small>
+                                </div>
+
+                                <!-- education -->
+                                <div class="form-row">
+                                <div class="col">
+                                <!-- edu -->
+                                    <div class="md-form">
+                                    <input type="text" id="education" class="form-control">
+                                    <label for="education">Education</label>
+                                    
+                                </div>
+                                <div class="col">
+                                <!-- day and distance -->
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="male" name="male"> 
+                                    <label class="form-check-label" for="male">Day</label> 
+                                </div>
+                                    <!-- distance -->
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="male" name="male"> 
+                                    <label class="form-check-label" for="male">Distance</label> 
+                                </div>
+
+                                </div>
+                                </div>
+                                </div>
+
+                                <!-- end education -->
+
+                                <!-- Other Qualification -->
+
+                                <div class="md-form md-outline">
+                                    <textarea id="otherqualification" class="md-textarea form-control" rows="3"></textarea>
+                                    <label for="otherqualification">Other Qualification</label>
+                                </div>
+
+                                <!-- End Other Qualification -->
+
+                                <!-- Course attended at KMD -->
+                                <div>
+                                    <p class="font-weight-bold white-text text-center spacing primary-color lighten-4 py-2 mb-4">
+                                        <strong>Course attended at KMD</strong>
+                                    </p>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <!-- Couse Name -->
+                                <div class="col">
+                                    <div class="md-form">
+                                    <input type="text" id="coursename" class="form-control">
+                                    <label for="coursename">Course name</label>
+                                    </div>
+                                </div>
+                                    <!-- Section -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="section" class="form-control">
+                                        <label for="section">Section</label>
+                                    </div>
+                                </div>
+                                    <!-- Student Id -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="studentid" class="form-control">
+                                        <label for="studentid">Student ID</label>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- End Course attended at KMD -->
+
+                                <!-- Course attended KMD Row 2 -->
+                                <div class="form-row">
+                                    <!-- course name -->
+                                <div class="col">
+                                    <div class="md-form">
+                                    <input type="text" id="coursename2" class="form-control">
+                                    <label for="coursename2">Course name</label>
+                                    </div>
+                                </div>
+                                    <!-- section -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="section2" class="form-control">
+                                        <label for="section2">Section</label>
+                                    </div>
+                                </div>
+                                    <!-- student id -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="studentid2" class="form-control">
+                                        <label for="studentid2">Student ID</label>
+                                    </div>
+                                </div>
+                                <!-- End Lecture name -->
+                                </div>
+                                <!-- End Course attended KMD Row 2 -->
+                              
+                                <!-- Course attended KMD Row 3 -->
+                                <div class="form-row">
+                                    <!-- course name -->
+                                <div class="col">
+                                    <div class="md-form">
+                                    <input type="text" id="coursename3" class="form-control">
+                                    <label for="coursename2">Course name</label>
+                                    </div>
+                                </div>
+                                    <!-- section -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="section3" class="form-control">
+                                        <label for="section3">Section</label>
+                                    </div>
+                                </div>
+                                    <!-- student id -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="studentid3" class="form-control">
+                                        <label for="studentid3">Student ID</label>
+                                    </div>
+                                </div>
+                                <!-- End Lecture name -->
+                                </div>
+                                <!-- End Course attended KMD Row 3 -->
+
+                                <!-- Working Experience -->
+                                <div>
+                                    <p class="font-weight-bold white-text text-center spacing primary-color lighten-4 py-2 mb-4">
+                                        <strong>Previous Working Experience</strong>
+                                    </p>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <!-- Job Title -->
+                                <div class="col">
+                                    <div class="md-form">
+                                    <input type="text" id="jobtitle" class="form-control">
+                                    <label for="jobtitle">Job Title</label>
+                                    </div>
+                                </div>
+                                    <!-- Start Date -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="startdate" class="form-control">
+                                        <label for="startdate">Start Date</label>
+                                    </div>
+                                </div>
+                                    <!-- End Date -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="enddate" class="form-control">
+                                        <label for="enddate">End Date</label>
+                                    </div>
+                                </div>
+                                    <!-- Company's Name -->
+                                <div class="col">
+                                    <div class="md-form">
+                                    <input type="text" id="companyname" class="form-control">
+                                    <label for="companyname">Company's Name</label>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <!-- End Working Experience -->
+
+                                <!-- Working Experience row2 -->
+                                    <div class="form-row">
+                                    <!-- Job Title -->
+                                <div class="col">
+                                    <div class="md-form">
+                                    <input type="text" id="jobtitle2" class="form-control">
+                                    <label for="jobtitle2">Job Title</label>
+                                    </div>
+                                </div>
+                                    <!-- Start Date -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="startdate2" class="form-control">
+                                        <label for="startdate2">Start Date</label>
+                                    </div>
+                                </div>
+                                    <!-- End Date -->
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" id="enddate2" class="form-control">
+                                        <label for="enddate2">End Date</label>
+                                    </div>
+                                </div>
+                                    <!-- Company's Name -->
+                                <div class="col">
+                                    <div class="md-form">
+                                    <input type="text" id="companyname2" class="form-control">
+                                    <label for="companyname2">Company's Name</label>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- End Working Experience row2 -->
+
+                                <br>   
+
+                                <!-- Robot -->
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
+                                    <label class="form-check-label" for="materialRegisterFormNewsletter">I am not Robot</label>
+                                </div>
+
+                                <!-- Sign up button -->
+                                <button class="btn btn-primary btn-rounded btn-sm waves-effect waves-light" type="submit">Sign in</button>
+
+                                <!-- Social register -->
+                                <p>or sign up with:</p>
+
+                                <a type="button" class="btn-floating btn-fb btn-sm">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a type="button" class="btn-floating btn-tw btn-sm">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a type="button" class="btn-floating btn-li btn-sm">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a type="button" class="btn-floating btn-git btn-sm">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <hr>
+
+                            </form>
+                        <!-- Form -->
+                        </div>
+                    </div>
+                </div>
+                <!--End Content Column-->
+                <!--Sidebar Column-->
+                <!--Grid column-->
+                        <div class="col-md-3 text-center">
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                    <p>No 174-182, Pansodan Road , Kyauktada Township, Yangon, Myanmar</p>
+                                </li>
+
+                                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                    <p>+ 01 234 567 88</p>
+                                </li>
+
+                                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                    <p>enquiry@kmdcomputer.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                <!--End Sidebar Column-->
+
+                <!--Testimonials Row-->
+            
+            <div class="row mt-4">
+                <div class="col-lg-12 col-md-12 mb-12">
+                  <h5 class="h5-responsive mb-3 font-weight-bold">Testimonials</h5>
+              </div>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Testimonial -->
+                    <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up indigo lighten-1"></div>
+
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-3">
+                            <img src="img/general/avatar.jpg" class="rounded-circle" alt="Avatar">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="card-body">
+                            <!-- Name -->
+                            <h5 class="card-title">Anna Doe</h5>
+                            <hr>
+                            <!-- Quotation -->
+                            <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+                        </div>
+
+                    </div>
+                    <!-- End Testimonial -->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Testimonial -->
+                    <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up indigo lighten-1"></div>
+
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-3">
+                            <img src="img/general/avatar.jpg" class="rounded-circle" alt="Avatar">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="card-body">
+                            <!-- Name -->
+                            <h5 class="card-title">Anna Doe</h5>
+                            <hr>
+                            <!-- Quotation -->
+                            <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+                        </div>
+
+                    </div>
+                    <!-- End Testimonial -->
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Testimonial -->
+                    <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up indigo lighten-1"></div>
+
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-3">
+                            <img src="img/general/avatar.jpg" class="rounded-circle" alt="Avatar">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="card-body">
+                            <!-- Name -->
+                            <h5 class="card-title">Anna Doe</h5>
+                            <hr>
+                            <!-- Quotation -->
+                            <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+                        </div>
+
+                    </div>
+                    <!-- End Testimonial -->
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-4 mb-4">
+
+                    <!-- Testimonial -->
+                    <div class="card testimonial-card">
+
+                        <!-- Background color -->
+                        <div class="card-up indigo lighten-1"></div>
+
+                        <!-- Avatar -->
+                        <div class="avatar mx-auto white mt-3">
+                            <img src="img/general/avatar.jpg" class="rounded-circle" alt="Avatar">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="card-body">
+                            <!-- Name -->
+                            <h5 class="card-title">Anna Doe</h5>
+                            <hr>
+                            <!-- Quotation -->
+                            <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+                        </div>
+
+                    </div>
+                    <!-- End Testimonial -->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--End Testimonials Row-->
+        </div>
+    </main>
+    <!--Main layout-->
+
+
+    <!-- Footer -->
+    <br>
+    <footer class="page-footer font-small indigo">
+
+        <!-- Social buttons -->
+        <div class="primary-color">
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0">
+                            <i class="fab fa-facebook white-text mr-4"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!--Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </div>
+        </div>
+        <!-- Social buttons -->
+
+        <!--Footer Links-->
+        <div class="container mt-5 mb-4 text-md-left">
+            <div class="row mt-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>About KMD</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>KMD was founded in 1986 as a Training Institute. Now it holds presence in complete Technology paradigm of country with 900+ workforce.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Categories</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">News</a>
+                    </p>
+                    <p>
+                        <a href="#!">Activities</a>
+                    </p>
+                    <p>
+                        <a href="#!">Forums</a>
+                    </p>
+                    <p>
+                        <a href="#!">Education</a>
+                    </p>
+                </div>
+                <!--/.Second column-->
+
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Services</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Application Courses</a>
+                    </p>
+                    <p>
+                        <a href="#!">Professional Courses</a>
+                    </p>
+                    <p>
+                        <a href="#!">Diploma Courses</a>
+                    </p>
+                </div>
+                <!--/.Third column-->
+
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i></i>No 174-182, Pansodan Road
+                        <!-- (Middle Block) -->, Kyauktada Township, Yangon, Myanmar</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a> Power By Web Boy
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+
+    <script type="text/javascript">
+        // Initialization
+    </script>
+    
+        
+    </script>
+
+
+
+</body>
+
+</html>

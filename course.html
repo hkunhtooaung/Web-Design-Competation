@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>KMD Myanmar</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header>
+        <!--Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
+            <a class="navbar-brand" href="#">KMD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About 
+                        </a>
+                        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                            <a class="dropdown-item" href="about.html">About Us</a>
+                            <a class="dropdown-item" href="branches.html">Branches</a>
+                            <a class="dropdown-item" href="departments.html">Departments</a>
+                            <a class="dropdown-item" href="campus.html">Campus</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                        <span class="sr-only">(current)</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="csrs.html">Csrs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact
+            </a>
+                        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                            <a class="dropdown-item" href="contact.html">Contact Us</a>
+                            <a class="dropdown-item" href="alumni.html">Alumni</a>
+                            <a class="dropdown-item" href="franchises.html">Franchises</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <!-- <li class="nav-item">
+            <a class="nav-link waves-effect waves-light">1
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li> -->
+                    <li class="nav-item avatar dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/general/avatar.jpg" class="rounded-circle z-depth-0" alt="Avatar" style="height: 35px;">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--/.Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-3">
+        <!--Main container-->
+        <div class="container">
+
+          <div class="row">
+                <div class="col-lg-12 col-md-12 mb-12">
+                    <div style="height: 60px;"></div>
+                </div>
+                
+          </div>
+
+       <!-- New Row-->
+        <div class="row">
+
+          <!-- Content Column-->
+          <div class="col-md-8 mb-4">
+
+             <!-- Enroll Form -->
+              <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header text-center">
+                              <h4 class="modal-title w-100 font-weight-bold">Enroll</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                              <div class="md-form mb-5">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="orangeForm-name" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                              </div>
+                              <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="orangeForm-email" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                              </div>
+
+                              <div class="md-form mb-4">
+                                <i class="fas fa-lock prefix grey-text"></i>
+                                <input type="password" id="orangeForm-pass" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                              </div>
+
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                              <button class="btn btn-primary btn-sm">Sign up</button>
+                            </div>
+                          </div>
+                        </div>
+              </div>
+            <!-- End Enroll Form -->
+            <!--Card-->
+            <div class="card mb-4 wow fadeIn">
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <p class="h5 my-4">Basic Software Engineering</p>
+                <p>
+                  Computer Programming ကို စတင် လေ့လာလိုသုများအတွက် Programming ၏ အခြေခံ သဘောတရားများကို အချိန်တိုအတွင်း လက်တွေ့ကျကျ သင်ကြားပေးမည့် အကောင်းဆုံး သင်တန်းဖြစ်ပါသည်။
+                </p>
+
+                <h5 class="my-4">
+                  <strong>Syllabus</strong>
+                </h5>
+
+                <ul class="list-group list-group-flush">
+                      <li class="list-group-item">HTML Essential Training</li>
+                      <li class="list-group-item">Introduction to CSS</li>
+                      <li class="list-group-item">CSS Essential Training</li>
+                      <li class="list-group-item">JavaScript Essential Training</li>
+                      <li class="list-group-item">Succeeding in Web Development: Full Stack and Front End</li>
+                      <li class="list-group-item">Workflow Tools for Web Developers</li>
+                      <li class="list-group-item">Git Essential Training: The Basics</li>
+                      <li class="list-group-item">Data Structures</li>
+                      <li class="list-group-item">Introduction to Algorithms</li>
+                      <li class="list-group-item">Database Designing</li>
+                       <li class="list-group-item">Computer Systems Analysis</li>
+                    </ul>
+
+                <hr>
+                <a class="btn btn-outline-primary btn-sm" href="Useful_Resources.pdf" target="_blank" 
+                  role="button">Download Syllabus<i class="fas fa-download ml-2"></i></a>
+                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRegisterForm">Enroll Now</button>
+
+              </div>
+
+            </div>
+            <!--/.Card-->
+            
+          </div>
+          <!-- End Content Column-->
+
+          <!--Sidebar Column-->
+          <div class="col-md-4 mb-4">
+
+            <div class="card card-body pb-0 mb-4">
+
+                        <!--Card image-->
+                        <div class="avatar mx-auto white mt-3">
+                            <img src="img/general/avatar.jpg" class="rounded-circle" alt="Avatar">
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h5 class="card-title dark-grey-text text-center grey lighten-4 py-2">
+                                <strong>Jeffrey Way</strong>
+                            </h5>
+
+                            <!--Description-->
+                            <p class="mt-3 dark-grey-text font-small text-center">
+                                <em>Jeffrey is a web developer, writer, speaker, and creator of Laracasts.com. He spends his days digging into cutting edge technologies, and finding new ways to teach complicated concepts.
+                                </em>
+                            </p>
+
+                            <ul class="list-unstyled list-inline-item circle-icons list-unstyled flex-center">
+                                <!--Facebook-->
+                                <li>
+                                    <a class="fb-ic">
+                                        <i class="fab fa-facebook-f"> </i>
+                                    </a>
+                                </li>
+                                <!--Twitter-->
+                                <li>
+                                    <a class="tw-ic">
+                                        <i class="fab fa-twitter mx-3"> </i>
+                                    </a>
+                                </li>
+                                <!--Google +-->
+                                <li>
+                                    <a class="gplus-ic">
+                                        <i class="fab fa-google-plus-g"> </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+            
+            <!-- Years Archive -->
+            <div class="card card-body pb-0 mb-4">
+                <div class="single-post">
+
+                    <p class="font-weight-bold white-text text-center spacing primary-color lighten-4 py-2 mb-4">
+                        <strong>About Course</strong>
+                    </p>
+
+                    <ul class="list-group mb-4">
+                      <li class="list-group-item">
+                        <div class="md-v-line"></div><i class="fas fa-users mr-4 pr-3"></i> Enrolled: 254 students
+                      </li>
+                      <li class="list-group-item">
+                        <div class="md-v-line"></div><i class="fas fa-calendar mr-5"></i>Duration: 6 hours
+                      </li>
+                      <li class="list-group-item">
+                        <div class="md-v-line"></div><i class="fas fa-book-open mr-5"></i>Lectures: 6
+                      </li>
+                      <li class="list-group-item">
+                        <div class="md-v-line"></div><i class="fas fa-video mr-5"></i>Video: 3 hours
+                      </li>
+                      <li class="list-group-item">
+                        <div class="md-v-line"></div><i class="fas fa-signal mr-5"></i>Level: Beginner
+                      </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- End Years Archive -->
+
+          </div>
+          <!-- End Sidebar column-->
+
+        </div>
+        <!-- End Content Row -->
+        <div class="col-md-12 mb-4">
+          
+          <!--Card-->
+            <div class="card mb-4 wow fadeIn">
+
+               <!--Card content-->
+              <div class="card-body">
+                <!-- Classic tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#pansodan" role="tab" aria-controls="curriculum"
+                  aria-selected="true">ပန်းဆိုးတန်း</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="faq-tab" data-toggle="tab" href="#myaynigone" role="tab" aria-controls="myaynigone"
+                  aria-selected="false">မြေနီကုန်း</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="hledan-1-tab" data-toggle="tab" href="#hledan-1" role="tab" aria-controls="hledan-1"
+                  aria-selected="false">လှည်းတန်း (၁)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="hledan-2-tab" data-toggle="tab" href="#hledan-2" role="tab" aria-controls="hledan-2"
+                  aria-selected="false">လှည်းတန်း (၂)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="chintown-tab" data-toggle="tab" href="#chintown" role="tab" aria-controls="chintown"
+                  aria-selected="false">လမ်းမတော်</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tarmwe-tab" data-toggle="tab" href="#tarmwe" role="tab" aria-controls="tarmwe"
+                  aria-selected="false">တာမွေ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="theingyizay-tab" data-toggle="tab" href="#theingyizay" role="tab" aria-controls="theingyizay"
+                  aria-selected="false">သိမ်ကြီးစျေး</a>
+              </li>
+            </ul>
+            <div class="tab-content p-3" id="myTabContent">
+              <div class="tab-pane fade show active" id="pansodan" role="tabpanel" aria-labelledby="pansodan-tab">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Available User</th>
+                        <th scope="col">Section</th>
+                        <th scope="col">Promotion</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>24 - Dec - 2019</th>
+                        <td>11:30 AM - 01:00 PM</td>
+                        <td>9</td>
+                        <td>Mon - Fri</td>
+                        <td>-</td>
+                        <th>
+                          <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRegisterForm">Register</button>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>16 - Jan - 2020</th>
+                        <td>04:00 PM - 05:30 PM</td>
+                        <td>12</td>
+                        <td>Mon - Fri</td>
+                        <td>-</td>
+                        <th>
+                          <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRegisterForm">Register</button>
+                        </th>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                  <p>
+                    <i class="fas fa-home mr-3"></i>
+                    No.(174-182), Pansodan Road(Middle Block), Kyauktada Township, Yangon
+                  </p>
+                  <p>
+                    <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                  <p>
+                    <i class="fa fa-phone mr-3"></i> 01-381123, 381776, 38105, 391286, 391287
+                  </p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7640.0614867556005!2d96.161841!3d16.775146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cba3c904bddefc0!2sKMD%20IT%20%26%20Mobile%20Sales%20Center%20(Pansodan)!5e0!3m2!1sen!2smm!4v1579349511389!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+              <div class="tab-pane fade" id="myaynigone" role="tabpanel" aria-labelledby="myaynigone-tab">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Available User</th>
+                        <th scope="col">Section</th>
+                        <th scope="col">Promotion</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>02 - Jan - 2020</th>
+                        <td>07:00 PM - 08:30 PM</td>
+                        <td>11</td>
+                        <td>Mon - Sat</td>
+                        <td>-</td>
+                        <th>
+                          <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRegisterForm">Register</button>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>10 - Jan - 2020</th>
+                        <td>11:00 AM - 01:00 PM</td>
+                        <td>9</td>
+                        <td>Mon - Fri</td>
+                        <td>-</td>
+                        <th>
+                          <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRegisterForm">Register</button>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>10 - Jan - 2020</th>
+                        <td>01:00 PM - 02:30 PM</td>
+                        <td>11</td>
+                        <td>Mon - Fri</td>
+                        <td>-</td>
+                        <th>
+                          <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRegisterForm">Register</button>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>14 - Jan - 2020</th>
+                        <td>02:30 PM - 04:00 PM</td>
+                        <td>12</td>
+                        <td>Mon - Fri</td>
+                        <td>-</td>
+                        <th>
+                          <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalRegisterForm">Register</button>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>
+                    <i class="fas fa-home mr-3"></i>
+                    No 331, Pyay Road, Myaynigone, Sanchaung Tsp., Yangon, Myanmar.
+                  </p>
+                  <p>
+                    <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                  <p>
+                    <i class="fa fa-phone mr-3"></i> +95-1-527436, 534170, 502233
+                  </p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7640.0614867556005!2d96.161841!3d16.775146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cba3c904bddefc0!2sKMD%20IT%20%26%20Mobile%20Sales%20Center%20(Pansodan)!5e0!3m2!1sen!2smm!4v1579349511389!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+              <div class="tab-pane fade" id="hledan-1" role="tabpanel" aria-labelledby="hledan-1-tab">
+                <p>
+                    <i class="fas fa-home mr-3"></i>
+                    No 30, First Fl., Project No.(1), Building (1),Hledan Junction, Insein Rd, Kamayut Township, Yangon, Myanmar
+                </p>
+                <p>
+                  <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                <p>
+                  <i class="fa fa-phone mr-3"></i> +95-1-524400, 505399
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7640.0614867556005!2d96.161841!3d16.775146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cba3c904bddefc0!2sKMD%20IT%20%26%20Mobile%20Sales%20Center%20(Pansodan)!5e0!3m2!1sen!2smm!4v1579349511389!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+              <div class="tab-pane fade" id="hledan-2" role="tabpanel" aria-labelledby="hledan-2-tab">
+                <p>
+                    <i class="fas fa-home mr-3"></i>
+                    No 15, Fourth Fl., Corner of Insein RD & U Tun Lin Chan St, Kamayut Township, Yangon, Myanmar.
+                </p>
+                <p>
+                  <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                <p>
+                  <i class="fa fa-phone mr-3"></i> +95-1-502211
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7640.0614867556005!2d96.161841!3d16.775146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cba3c904bddefc0!2sKMD%20IT%20%26%20Mobile%20Sales%20Center%20(Pansodan)!5e0!3m2!1sen!2smm!4v1579349511389!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+              <div class="tab-pane fade" id="chintown" role="tabpanel" aria-labelledby="chintown-tab">
+                <p>
+                    <i class="fas fa-home mr-3"></i>
+                    No 90,Hledan Street, Lanmadaw Township, Yangon, Myanmar.
+                </p>
+                <p>
+                  <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                <p>
+                  <i class="fa fa-phone mr-3"></i> +95-1-220555
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7640.0614867556005!2d96.161841!3d16.775146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cba3c904bddefc0!2sKMD%20IT%20%26%20Mobile%20Sales%20Center%20(Pansodan)!5e0!3m2!1sen!2smm!4v1579349511389!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+              <div class="tab-pane fade" id="tarmwe" role="tabpanel" aria-labelledby="tarmwe-tab">
+                <p>
+                    <i class="fas fa-home mr-3"></i>
+                    No.272, KyaikKaSan Road, Kyauk Myaung, Tamwe Tsp., Yangon, Myanmar.
+                </p>
+                <p>
+                  <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                <p>
+                  <i class="fa fa-phone mr-3"></i> +95-1-541328
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7640.0614867556005!2d96.161841!3d16.775146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cba3c904bddefc0!2sKMD%20IT%20%26%20Mobile%20Sales%20Center%20(Pansodan)!5e0!3m2!1sen!2smm!4v1579349511389!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+              <div class="tab-pane fade" id="theingyizay" role="tabpanel" aria-labelledby="theingyizay-tab">
+                <p>
+                    <i class="fas fa-home mr-3"></i>
+                    Theingyi Zay, Block (C), 3rd Floor Ward 1, Shwedagon Pagoda Road, Pabedan Tsp.,Yangon, Myanmar.
+                </p>
+                <p>
+                  <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                <p>
+                  <i class="fa fa-phone mr-3"></i> +95-1-527436, 534170, 502233
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7640.0614867556005!2d96.161841!3d16.775146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cba3c904bddefc0!2sKMD%20IT%20%26%20Mobile%20Sales%20Center%20(Pansodan)!5e0!3m2!1sen!2smm!4v1579349511389!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </div>
+
+              </div>
+
+            </div>
+            <!--/.Card-->
+
+        </div>
+            
+       </div>
+        <!--End Main Container-->
+    </main>
+    <!--Main layout-->
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
+
+        <!-- Social buttons -->
+        <div class="primary-color">
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0">
+                            <i class="fab fa-facebook white-text mr-4"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!--Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+        <!-- Social buttons -->
+
+        <!--Footer Links-->
+        <div class="container mt-5 mb-4 text-md-left">
+            <div class="row mt-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>About KMD</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>KMD was founded in 1986 as a Training Institute. Now it holds presence in complete Technology paradigm of country with 900+ workforce.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Categories</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">News</a>
+                    </p>
+                    <p>
+                        <a href="#!">Activities</a>
+                    </p>
+                    <p>
+                        <a href="#!">Forums</a>
+                    </p>
+                    <p>
+                        <a href="#!">Education</a>
+                    </p>
+                </div>
+                <!--/.Second column-->
+
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Services</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Application Courses</a>
+                    </p>
+                    <p>
+                        <a href="#!">Professional Courses</a>
+                    </p>
+                    <p>
+                        <a href="#!">Diploma Courses</a>
+                    </p>
+                </div>
+                <!--/.Third column-->
+
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i></i>No 174-182, Pansodan Road
+                        <!-- (Middle Block) -->, Kyauktada Township, Yangon, Myanmar</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> enquiry@kmdcomputer.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a> Power By Web Boy
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+
+    <script type="text/javascript">
+        // Initialization
+    </script>
+</body>
+
+</html>
